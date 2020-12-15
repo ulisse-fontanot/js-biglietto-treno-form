@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>biglietto treno</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+      <!-- INSERIMENTO DATI -->
+      <section id="dati">
+
+        <!-- DATI -->
+        <div class="row">
+          <div class="col">
+            <label for="nome-cognome">Nome Cognome</label>
+            <input id="nome" type="text" placeholder="I tuoi dati">
+          </div>
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="number" placeholder="Km da percorrere">
+          </div>
+          <div class="col">
+            <label for="eta">Fascia d'età</label>
+            <select id="eta" class="eta" name="eta">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="anziano">Anziano</option>
+            </select>
+          </div>
+        </div>
+        <!-- DATI -->
+
+        <!-- BUTTON -->
+        <div class="row">
+          <a id="genera" class="button" href="#">Genera</a>
+          <a id="annulla" class="button" href="#">Annulla</a>
+        </div>
+        <!-- BUTTON -->
+
+      </section>
+      <!-- INSERIMENTO DATI -->
+
+      <h2>IL TUO BIGLIETTO</h2>
+
+      <!-- RESOCONTO DATI -->
+      <section id="resoconto">
+        <h3>DETTAGLIO PASSEGGERO</h3>
+
+        <div class="riquadro">
+          <div class="biglietto-sx">
+            <h3>NOME PASSEGGERO</h3>
+            <h3 id="nominativo"></h3>
+          </div>
+          <div class="tabella">
+            <table>
+              <tr>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo biglietto</th>
+              </tr>
+              <tr>
+                <th><p id="offerta"></p></th>
+                <th><p id="carrozza"></p></th>
+                <th><p id="codice"></p></th>
+                <th><p id="costo"></p></th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- RESOCONTO DATI -->
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
