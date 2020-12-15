@@ -20,6 +20,9 @@ function() {
     message = "Sconto anziano";
   }
 
+  var primaLettera = nome.charAt(0).toUpperCase();
+  var restoNome = nome.substring(1).toLowerCase();
+  var nome = primaLettera + restoNome;
   document.getElementById('nominativo').innerHTML = nome;
 
   document.getElementById('offerta').innerHTML = message;
